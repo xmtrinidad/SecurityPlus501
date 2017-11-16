@@ -1,10 +1,13 @@
-<ul *ngFor="let bullets of subsectionBullets" class="objectives-list">
-  <!-- Uses pipe to iterate over keys -->
-  <li *ngFor="let bullet of bullets | keys">
-    {{bullet}}
-    <!-- prevent generation of sublist of array is empty -->
-    <ul *ngIf="bullets[bullet].length !== 0">
-      <li *ngFor="let subbullet of bullets[bullet]">{{subbullet}}</li>
-    </ul>
-  </li>
-</ul>
+<div class="subsections">
+  <ul *ngFor="let bullets of subsectionBullets" class="objectives-list">
+    <!-- Uses pipe to iterate over keys -->
+    <li *ngFor="let bullet of bullets | keys">
+      {{bullet}}
+      <!-- prevent generation of sublist of array is empty -->
+      <ul *ngIf="bullets[bullet].length !== 0">
+        <li *ngFor="let subbullet of bullets[bullet]">{{subbullet}}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<hr>

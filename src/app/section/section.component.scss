@@ -19,6 +19,10 @@
     }
 }
 
+.desktop {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .current {
         .icon-container {
@@ -30,5 +34,8 @@
     }
     app-section-mobile-dropdown {
         display: none;
+    }
+    .desktop {
+        display: block;
     }
 }

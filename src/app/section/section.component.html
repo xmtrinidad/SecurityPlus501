@@ -21,8 +21,21 @@
   <!-- Objective -->
   <div class="objective my-3" *ngFor="let subsection of section.subsections">
 
+    <!-- Hidden with CSS at min-width: 768px -->
     <app-section-mobile-dropdown [section]="section" [subsection]="subsection">
     </app-section-mobile-dropdown>
+
+    <!-- Initially hidden with CSS until min-width: 768px -->
+    <div class="desktop">
+      <app-section-title 
+      [sectionColor]="section.color"
+      [subsectionNumber]="subsection.subNum"
+      [subsectionTitle]="subsection.subTitle">
+      </app-section-title>
+      <app-section-list [subsectionBullets]="subsection.bullets"></app-section-list>
+    </div>
+
+
 
   </div>
   <!-- /Objective -->
