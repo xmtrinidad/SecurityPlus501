@@ -9,6 +9,9 @@ import { NavService } from './nav.service';
 import { DesktopNavComponent } from './desktop-nav/desktop-nav.component';
 import { SectionComponent } from './section/section.component';
 import { KeysPipe } from './keys.pipe';
+import { SectionMobileDropdownComponent } from './section/section-mobile-dropdown/section-mobile-dropdown.component';
+import { SectionTitleComponent } from './section/section-title/section-title.component';
+import { SectionListComponent } from './section/section-list/section-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { KeysPipe } from './keys.pipe';
     SideNavComponent,
     DesktopNavComponent,
     SectionComponent,
-    KeysPipe
+    KeysPipe,
+    SectionMobileDropdownComponent,
+    SectionTitleComponent,
+    SectionListComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { NavService } from '../nav.service';
 })
 export class SectionComponent implements OnInit {
   section: Section;
+  panelOpenState = false;
 
   constructor(private navService: NavService) { }
 

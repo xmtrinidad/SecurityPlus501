@@ -1,0 +1,14 @@
+mat-expansion-panel-header {
+  min-height: 88px;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 18px;
+  height: 100%;
+}
+
+@media (min-width: 375px) {
+  mat-expansion-panel-header {
+    min-height: 70px;
+  }
+}
