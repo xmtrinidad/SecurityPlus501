@@ -1,0 +1,32 @@
+<div *ngIf="section" class="container">
+  <div class="current">
+    <div [style.background-color]="section.color" class="icon-container">
+      <i class="fa {{section.icon}} fa-4x" aria-hidden="true"></i>
+    </div>
+    <div class="text-center">
+      <h3 [style.color]="section.color" class="display-4 current__title">{{section.title}}</h3>
+    </div>
+  </div>
+  <hr>
+  <div class="objective" *ngFor="let subsection of section.subsections">
+
+    <div>
+      <span [style.backgroundColor]="section.color" class="objective__number">{{subsection.subNum}}</span>
+      <h4>{{subsection.subTitle}}</h4>
+    </div>
+    <ul *ngFor="let bullets of subsection.bullets" class="objectives">
+      <!-- Uses pipe to iterate over keys -->
+      <li *ngFor="let bullet of bullets | keys">
+        {{bullet}}
+        <!-- prevent generation of sublist of array is empty -->
+        <ul *ngIf="bullets[bullet].length !== 0">
+          <li>{{bullets[bullet]}}</li>
+        </ul>
+      </li>
+    </ul>
+    
+  </div>
+</div>
+
+
+

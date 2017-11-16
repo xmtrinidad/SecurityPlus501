@@ -1,0 +1,32 @@
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+@import '~@angular/material/theming';
+@import 'app/app.component.scss';
+@import 'app/side-nav/side-nav.component.scss';
+@include mat-core();
+
+$my-theme-primary: mat-palette($mat-red);
+$my-theme-accent:  mat-palette($mat-deep-purple);
+
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent);
+
+@include angular-material-theme($my-theme);
+@include nav-theme($my-theme);
+@include side-nav-theme($my-theme);
+
+html, body {
+    height: 100%;
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    color: inherit;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}

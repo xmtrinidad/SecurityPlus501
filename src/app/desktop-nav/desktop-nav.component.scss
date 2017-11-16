@@ -1,0 +1,42 @@
+a {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav {
+    margin: 50px 0 10px 0;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    a {
+        width: 125px;
+        height: 100px;
+        transition: all .5s;
+    }
+    i {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.sections li:first-child a {
+    border-top-left-radius: 8px;
+}
+
+.sections li:last-child a {
+    border-top-right-radius: 8px;
+}
+
+.active {
+    transform: scale(1.2);
+}

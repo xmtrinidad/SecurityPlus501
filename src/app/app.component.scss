@@ -1,0 +1,44 @@
+@import '~@angular/material/theming';
+
+@mixin nav-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  nav {
+    background-color: mat-color($primary);
+    color: #fff;
+  }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav__exam-number {
+    font-weight: bold;
+}
+
+app-side-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+app-desktop-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  app-side-nav, .nav__menu-btn {
+    display: none;
+  }
+
+  app-desktop-nav {
+    display: block;
+  }
+}
+
