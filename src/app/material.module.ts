@@ -3,18 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { 
   MatButtonModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatMenuModule
 } from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatMenuModule
   ],
   exports: [
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatMenuModule
   ],
   declarations: []
 })

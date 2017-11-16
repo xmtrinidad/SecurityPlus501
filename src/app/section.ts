@@ -5,6 +5,5 @@ export class Section {
     title: string;
     icon: string;
     color: string;
-    link: string;
     subsections: SubSection[];
 }

@@ -7,10 +7,21 @@ export const SECTIONS: Section[] = [{
   title: '1.0 Threats, Attacks and Vulnerabilities',
   color: '#0090ba',
   icon: 'fa-exclamation-triangle',
-  link: '',
-  subsections: [{
+  subsections: [
+    {
     subNum: 1.1,
     subTitle: 'Given a scenario, analyze indicators of compromise and determine the type of malware.',
+    links: [
+      {title: 'An Overview of Malware', link: 'https://www.youtube.com/watch?v=f3eIERxYHhY'},
+      {title: 'Viruses & Worms', link: 'https://www.youtube.com/watch?v=83EIaRUxgmY'},
+      {title: 'Ransomware & Crypto-Malware', link: 'https://www.youtube.com/watch?v=0dAXuG-WY7M'},
+      {title: 'Trojans & RATs', link: 'https://www.youtube.com/watch?v=ib8Phu54VYc'},
+      {title: 'Rootkits', link: 'https://www.youtube.com/watch?v=GpoWRVA4QXE'},
+      {title: 'Keyloggers', link: 'https://www.youtube.com/watch?v=OqS6CDP8N2w'},
+      {title: 'Adware & Spyware', link: 'https://www.youtube.com/watch?v=pO_ln-cSY0Y'},
+      {title: 'Bots & Botnets', link: 'https://www.youtube.com/watch?v=5kA2ney8r1Y'},
+      {title: 'Logic Bombs', link: 'https://www.youtube.com/watch?v=aUemRyeKJs4'},
+    ],
     bullets: [{
       'Viruses': [],
       'Crypto-malware': [],
@@ -30,6 +41,35 @@ export const SECTIONS: Section[] = [{
   {
     subNum: 1.2,
     subTitle: 'Compare and contrast types of attacks.',
+    links: [
+      {title: 'Phishing', link: 'https://www.youtube.com/watch?v=Y68_ZPlj6Ow'},
+      {title: 'Tailgating and Impersonation', link: 'https://www.youtube.com/watch?v=7n10Bt6OtGY'},
+      {title: 'Dumpster Diving', link: 'https://www.youtube.com/watch?v=jX6z6Ne4ekI'},
+      {title: 'Shoulder Surfing', link: 'https://www.youtube.com/watch?v=gLKeYf2zLCQ'},
+      {title: 'Hoaxes', link: 'https://www.youtube.com/watch?v=g0tjeIRZdU8'},
+      {title: 'Watering Hole Attacks', link: 'https://www.youtube.com/watch?v=cqvaD2Do7UI'},
+      {title: 'Principles of Social Engineering', link: 'https://www.youtube.com/watch?v=xrdYV7bXQVc'},
+      {title: 'Denial of Service', link: 'https://www.youtube.com/watch?v=Y9LFN4Ajw6c'},
+      {title: 'Buffer Overflows', link: 'https://www.youtube.com/watch?v=TSeqEN-ZXe4'},
+      {title: 'Data Injection', link: 'https://www.youtube.com/watch?v=81yiRyGG29Y'},
+      {title: 'Cross-site Scripting - XSS', link: 'https://www.youtube.com/watch?v=AjsYOMatAcg'},
+      {title: 'Cross-site Request Forgery', link: 'https://www.youtube.com/watch?v=rbP2jwEDlBM'},
+      {title: 'Privilege Escalation', link: 'https://www.youtube.com/watch?v=KDIfL6meNQs'},
+      {title: 'DNS Poisoning & Domain Hijacking', link: 'https://www.youtube.com/watch?v=c76GbfM_QsI'},
+      {title: 'Zero-Day Attacks', link: 'https://www.youtube.com/watch?v=0zeEGYENgoo'},
+      {title: 'Replay Attacks', link: 'https://www.youtube.com/watch?v=jy8USm8pIYM'},
+      {title: 'Client Hijacking Attacks', link: 'https://www.youtube.com/watch?v=f2VK7jq-s5A'},
+      {title: 'Driver Manipulation', link: 'https://www.youtube.com/watch?v=yQb2A-KoA6Y'},
+      {title: 'Wireless Replay Attacks', link: 'https://www.youtube.com/watch?v=1Mx4Ld7PF0s'},
+      {title: 'Rogue Access Points and Evil Twins', link: 'https://www.youtube.com/watch?v=XqAn2iR9Cc0'},
+      {title: 'Wireless Jamming', link: 'https://www.youtube.com/watch?v=wqq_uWVqFso'},
+      {title: 'WPS Attacks', link: 'https://www.youtube.com/watch?v=drHyM--ZY5c'},
+      {title: 'Bluejacking and Bluesnarfing', link: 'https://www.youtube.com/watch?v=ofTKPoLOxnA'},
+      {title: 'RFID & NFC Attacks', link: 'https://www.youtube.com/watch?v=GXck1pf7-KE'},
+      {title: 'Wireless Disassociation Attacks', link: 'https://www.youtube.com/watch?v=nRIND-GNiLM'},
+      {title: 'Cryptographic Attacks', link: 'https://www.youtube.com/watch?v=wjcT1A2CGJo'},
+      {title: 'Bluejacking and Bluesnarfing', link: 'https://www.youtube.com/watch?v=ofTKPoLOxnA'},
+    ],
     bullets: [{
       'Social Engineering': [
         'Phishing',
@@ -95,6 +135,9 @@ export const SECTIONS: Section[] = [{
   {
     subNum: 1.3,
     subTitle: 'Explain threat actor types and attributes.',
+    links: [
+      {title: 'Threat Actors', link: 'https://www.youtube.com/watch?v=_c61C63lFMg'}
+    ],
     bullets: [{
       'Typical actors': [
         'Script kiddies',
@@ -116,6 +159,9 @@ export const SECTIONS: Section[] = [{
   {
     subNum: 1.4,
     subTitle: 'Explain penetration testing concepts.',
+    links: [
+      {title: 'Penetration Testing', link: 'https://www.youtube.com/watch?v=AbVbqF-UmHc'},
+    ],
     bullets: [{
       'Active reconnaissance': [],
       'Passive reconnaissance': [],
@@ -132,6 +178,9 @@ export const SECTIONS: Section[] = [{
   {
     subNum: 1.5,
     subTitle: 'Explain vulnerability scanning concepts.',
+    links: [
+      {title: 'Vulnerability Scanning', link: 'https://www.youtube.com/watch?v=HukLd-6C4Ew'}
+    ],
     bullets: [{
       'Passively test security controls': [],
       'Identify vulnerability': [],
@@ -145,6 +194,9 @@ export const SECTIONS: Section[] = [{
   {
     subNum: 1.6,
     subTitle: 'Explain the impact associated with types of vulnerabilities.',
+    links: [
+      {title: 'Vulnerability Types', link: 'https://www.youtube.com/watch?v=1UNCDsrDTu4'}
+    ],
     bullets: [{
       'Race conditions': [],
       'Vulnerabilities due to:': [
