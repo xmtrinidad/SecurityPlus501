@@ -4,28 +4,36 @@
       <i class="fa {{section.icon}} fa-4x" aria-hidden="true"></i>
     </div>
     <div class="text-center">
-      <h3 [style.color]="section.color" class="display-4 current__title">{{section.title}}</h3>
+      <h3 [style.color]="section.color" class="display-3 current__title">{{section.title}}</h3>
     </div>
   </div>
   <hr>
+  
+  <!-- Objective -->
   <div class="objective" *ngFor="let subsection of section.subsections">
 
-    <div>
-      <span [style.backgroundColor]="section.color" class="objective__number">{{subsection.subNum}}</span>
+    <!-- Title Dropdown Card -->
+    <div class="objective__title">
+      <span [style.backgroundColor]="section.color" class="objective__number mat-elevation-z2">{{subsection.subNum}}</span>
       <h4>{{subsection.subTitle}}</h4>
     </div>
-    <ul *ngFor="let bullets of subsection.bullets" class="objectives">
+    <!-- /Title Dropdown Card -->
+
+    <!-- Objectives List -->
+    <ul *ngFor="let bullets of subsection.bullets" class="objectives-list">
       <!-- Uses pipe to iterate over keys -->
       <li *ngFor="let bullet of bullets | keys">
         {{bullet}}
         <!-- prevent generation of sublist of array is empty -->
         <ul *ngIf="bullets[bullet].length !== 0">
-          <li>{{bullets[bullet]}}</li>
+          <li *ngFor="let subbullet of bullets[bullet]">{{subbullet}}</li>
         </ul>
       </li>
     </ul>
-    
+    <!-- /Objectives List -->
+
   </div>
+  <!-- /Objective -->
 </div>
 
 
