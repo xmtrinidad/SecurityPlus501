@@ -1,0 +1,21 @@
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <!-- Title Dropdown Card -->
+        <app-section-title 
+        [sectionColor]="section.color"
+        [subsectionNumber]="subsection.subNum"
+        [subsectionTitle]="subsection.subTitle">
+        </app-section-title>
+        <!-- /Title Dropdown Card -->
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <!-- Objectives List -->
+    <app-section-list 
+    [subsectionBullets]="subsection.bullets">
+    </app-section-list>
+    
+    <!-- /Objectives List -->
+  </mat-expansion-panel>
+</mat-accordion>

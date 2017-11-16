@@ -1,0 +1,25 @@
+.objective__title {
+  display: flex;
+  align-items: center;
+  .objective__number {
+    color: #fff;
+    font-weight: bold;
+    font-size: .80rem;
+    padding: 6px 8px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  h4 {
+    font-size: .87rem;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 375px) {
+  .objective__title {
+    h4 {
+      font-size: .95rem;
+    }
+  }
+}
