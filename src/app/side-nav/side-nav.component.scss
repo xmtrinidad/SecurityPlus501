@@ -9,12 +9,12 @@ h3 {
 }
 
 .side-nav {
+  z-index: 3;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 2;
   background: #fff;
-  width: 100%;
   ul {
     list-style: none;
     padding: 0;
@@ -43,4 +43,8 @@ h3 {
     justify-content: center;
     align-items: center;
   }
+}
+
+@media (orientation: landscape) {
+  
 }

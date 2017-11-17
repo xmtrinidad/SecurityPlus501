@@ -1,7 +1,6 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { SECTIONS } from './section-data';
 import { Section } from './section';
-import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class NavService {
