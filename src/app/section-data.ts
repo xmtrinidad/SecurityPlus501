@@ -236,7 +236,16 @@ const sectionTwo = {
     {
     subNum: 2.1,
     subTitle: 'Install/configure network components, both hardware & software-based, to support organizational security.',
-    links: [],
+    links: [
+       {title: 'Firewalls', link: 'https://www.youtube.com/watch?v=mDKKqPxMpb0'},
+       {title: 'VPN Concentrators', link: 'https://www.youtube.com/watch?v=sxBQZQM-RNk'},
+       {title: 'Network Intrusion Detection and Prevention', link: 'https://www.youtube.com/watch?v=hEgWPWIuq_s'},
+       {title: 'Router and Switch Security', link: 'https://www.youtube.com/watch?v=I7Tmo1RgF3E'},
+       {title: 'Proxies', link: 'https://www.youtube.com/watch?v=I7yyVNQzRuo'},
+       {title: 'Load Balancers', link: 'https://www.youtube.com/watch?v=NHhuVpD6LyU'},
+       {title: 'Access Points', link: 'https://www.youtube.com/watch?v=-I3KAqMQljo'},
+       {title: 'SIEM', link: 'https://www.youtube.com/watch?v=3JTjVa0IM7o'},
+    ],
     bullets: [{
       'Firewall': [
         'ACL',
