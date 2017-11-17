@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+@mixin side-nav-theme($theme) {
+  $primary: map-get($theme, primary);
+  .side-nav__title {
+    background-color: mat-color($primary);
+    color: #fff;
+  }
+}

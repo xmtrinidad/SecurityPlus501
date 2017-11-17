@@ -1,0 +1,46 @@
+nav {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /** Hide logo on mobile **/
+  .logo {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav__exam-number {
+    font-weight: bold;
+  }
+  
+  app-side-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    /** Hide side nav and menu button on desk top **/
+    app-side-nav,
+    .nav__menu-btn {
+      display: none;
+    }
+    /** Increase size of nav to accomodate logo **/
+    nav {
+      height: 70px;
+    }
+    .logo {
+      flex: 1;
+      display: block;
+      img {
+        height: 90px;
+      }
+    }
+  }

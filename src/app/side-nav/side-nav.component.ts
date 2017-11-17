@@ -15,7 +15,7 @@ import { Section } from '../section';
       state('show', style({
         left: 0
       })),
-      transition('hide <=> show', animate('600ms ease-in-out'))
+      transition('hide <=> show', animate('400ms ease-in-out'))
     ])
   ]
 })
@@ -31,7 +31,7 @@ export class SideNavComponent implements OnInit {
 
   /**
    * Hide menu state and go to section
-   * and get section clicked
+   * Get section clicked
    */
   sectionClicked(s) {
     this.navService.menuState = 'hide';

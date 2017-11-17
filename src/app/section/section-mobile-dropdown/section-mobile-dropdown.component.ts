@@ -9,6 +9,7 @@ import { Section } from '../../section';
 })
 export class SectionMobileDropdownComponent implements OnInit {
   @Input() subsection: SubSection;
+  // Takes in clicked section to get section color
   @Input() section: Section;
 
   constructor() { }

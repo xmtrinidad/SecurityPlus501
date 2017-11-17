@@ -1,16 +1,8 @@
-<nav>
-  <div>
-    <button (click)='navService.menuClicked()' class="nav__menu-btn" mat-icon-button>
-      <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
-    </button>
-  </div>
-  <div>
-    <span class="nav__exam-number">SYO-501</span>
-  </div>
-  <app-side-nav></app-side-nav>
-</nav>
-<app-desktop-nav></app-desktop-nav>
-<app-section></app-section>
+<app-nav></app-nav>
 
+<div class="main">
+  <app-desktop-nav></app-desktop-nav>
+  <app-section></app-section>
+</div>
 
-<!-- Link to pdf https://certification.comptia.org/docs/default-source/exam-objectives/comptia-security-sy0-501-exam-objectives.pdf?sfvrsn=2 -->
+<app-footer></app-footer>

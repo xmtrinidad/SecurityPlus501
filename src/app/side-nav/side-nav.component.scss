@@ -1,55 +1,46 @@
-@import '~@angular/material/theming';
-@mixin side-nav-theme($theme) {
-    $primary: map-get($theme, primary);
-    .side-nav__title {
-      background-color: mat-color($primary);
-      color: #fff;
-    }
-  }
+/** DEFAULT STYLES **/
 
-
-
-a {
-    display: block;
+img {
+    height: 120px;
 }
-
-h2,h3 {
-    padding: 0;
-    margin: 0;
+h3 {
+  padding: 0;
+  margin: 0;
 }
 
 .side-nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    background: #fff;
-    width: 100%;
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: #fff;
+  width: 100%;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .side-nav__title {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 .section a {
-    border-bottom: 1px solid #BDBDBD;
-    color: #212121;
-    font-weight: bold;
-    height: 90px;
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    grid-gap: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #BDBDBD;
+  color: #212121;
+  font-weight: bold;
+  height: 90px;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-gap: 15px;
+  align-items: center;
+  i {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    i {
-        color: #fff;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  }
 }

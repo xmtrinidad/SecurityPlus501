@@ -5,15 +5,17 @@ hr {
 @media (min-width: 768px) {
     ul {
         display: grid;
-        grid-column-gap: 5px;
+        grid-column-gap: 10px;
         grid-template-columns: 1fr 1fr;
         align-items: start;
     }
     li {
         padding: 2px;
     }
+    /** These styles are for cleaning up the grouping of li elements **/
     .subsections > ul > li > ul {
         padding-left: 30px;
+        font-weight: normal;
     }
 
     .subsections > ul > li > ul > li:nth-child(odd) {
@@ -23,6 +25,12 @@ hr {
     .subsections > ul > li > ul > li:nth-child(even) {
         margin-left: 6px;
     }
+
+    .subsections > ul > li {
+        font-weight: bold;
+        color: rgb(54, 54, 54);
+    }
+
     .link-btn {
         text-align: center;
     }

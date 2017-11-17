@@ -11,6 +11,7 @@ interface Link {
   styleUrls: ['./section-list.component.scss']
 })
 export class SectionListComponent implements OnInit {
+  // Takes in bullets and links based on clicked section
   @Input() subsectionBullets: any[];
   @Input() sectionLinks: Link[];
 

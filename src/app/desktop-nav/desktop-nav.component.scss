@@ -1,6 +1,3 @@
-a {
-    display: block;
-}
 
 ul {
     list-style: none;
@@ -16,18 +13,21 @@ ul {
     display: flex;
     justify-content: center;
     a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: none;
+        opacity: .5;
+        cursor: pointer;
         width: 125px;
         height: 100px;
         transition: all .5s;
     }
     i {
+        font-size: 3.3rem;
         color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
-
 
 .sections li:first-child a {
     border-top-left-radius: 8px;
@@ -37,6 +37,12 @@ ul {
     border-top-right-radius: 8px;
 }
 
-.active {
-    transform: scale(1.2);
+
+.sections {
+    a.active {
+        position: relative;
+        transform: scale(1.2, 1.2);
+        z-index: 1;
+        opacity: 1 !important;
+    }
 }

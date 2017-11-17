@@ -197,11 +197,7 @@ const sectionOne = {
     ],
     bullets: [{
       'Race conditions': [],
-      'Vulnerabilities due to:': [
-        'End-of-life systems',
-        'Embedded systems',
-        'Lack of vendor support'
-      ],
+      
       'Improper input handling': [],
       'Improper error handling': [],
       'Misconfiguration/weak configuration': [],
@@ -210,18 +206,23 @@ const sectionOne = {
       'Untrained users': [],
       'Improperly configured accounts': [],
       'Vulnerable business processes': [],
+      'System sprawl/undocumented assets': [],
+      'Architecture/design weaknesses': [],
+      'New threats/zero day': [],
+      'Improper certificate and key management': [],
       'Weak cipher suites and implementations': [],
+      'Vulnerabilities due to:': [
+        'End-of-life systems',
+        'Embedded systems',
+        'Lack of vendor support'
+      ],
       'Memory/buffer vulnerability': [
         'Memory leak',
         'Integer overflow',
         'Buffer overflow',
         'Pointer dereference',
         'DLL injection'
-      ],
-      'System sprawl/undocumented assets': [],
-      'Architecture/design weaknesses': [],
-      'New threats/zero day': [],
-      'Improper certificate and key management': []
+      ]
     }]
   }]
 };
@@ -259,9 +260,13 @@ const sectionTwo = {
         'Rules',
         'Analytics'
       ],
-      'Router': [
-        'ACLs',
-        'Antispoofing'
+      'SIEM': [
+        'Aggregation',
+        'Correlation',
+        'Automated alerting and triggers',
+        'Time synchronization',
+        'Event deduplication',
+        'Logs/WORM'
       ],
       'Switch': [
         'Port security',
@@ -291,13 +296,9 @@ const sectionTwo = {
         'Fat vs. thin',
         'Controller-based vs. standalone'
       ],
-      'SIEM': [
-        'Aggregation',
-        'Correlation',
-        'Automated alerting and triggers',
-        'Time synchronization',
-        'Event deduplication',
-        'Logs/WORM'
+      'Router': [
+        'ACLs',
+        'Antispoofing'
       ],
       'DLP': [
         'USB blocking',
@@ -365,12 +366,8 @@ const sectionTwo = {
       'Access violations': [],
       'Certificate issues': [],
       'Data exfiltration': [],
-      'Misconfigured devices': [
-        'Firewall',
-        'Content filter',
-        'Access points'
-      ],
       'Weak security configurations': [],
+      'Unauthorized software': [],
       'Personnel issues': [
         'Policy violation',
         'Insider threat',
@@ -378,7 +375,11 @@ const sectionTwo = {
         'Social media',
         'Personal email'
       ],
-      'Unauthorized software': [],
+      'Misconfigured devices': [
+        'Firewall',
+        'Content filter',
+        'Access points'
+      ],
       'Baseline deviation': [],
       'License compliance violation (availability/integrity)': [],
       'Asset management': [],
@@ -634,15 +635,15 @@ const sectionThree = {
       links: [],
       bullets: [{
         'SCADA/ICS': [],
-        'Smart devices/IoT': [
-          'Wearable technology',
-          'Home automation'
-        ],
+        'Camera systems': [],
         'HVAC': [],
         'SoC': [],
         'RTOS': [],
         'Printers/MFDs': [],
-        'Camera systems': [],
+        'Smart devices/IoT': [
+          'Wearable technology',
+          'Home automation'
+        ],
         'Special purpose': [
           'Medical devices',
           'Vehicles',
@@ -701,9 +702,6 @@ const sectionThree = {
           'Type II',
           'Application cells/containers'
         ],
-        'VM sprawl avoidance': [],
-        'VM escape protection': [],
-        'Cloud storage': [],
         'Cloud deployment models': [
           'SaaS',
           'PaaS',
@@ -713,6 +711,8 @@ const sectionThree = {
           'Hybrid',
           'Community'
         ],
+        'VM escape protection': [],
+        'Cloud storage': [],
         'On-premise vs. hosted vs. cloud': [],
         'VDI/VDE': [],
         'Cloud access security broker': [],
@@ -729,14 +729,14 @@ const sectionThree = {
           'Configuration monitoring',
           'Configuration validation'
         ],
-        'Templates': [],
-        'Master image': [],
         'Non-persistence': [
           'Snapshots',
           'Revert to known state',
           'Rollback to known configuration',
           'Live boot media'
         ],
+        'Templates': [],
+        'Master image': [],
         'Elasticity': [],
         'Scalability': [],
         'Distributive allocation': [],
@@ -762,15 +762,15 @@ const sectionThree = {
         'Biometrics': [],
         'Barricades/bollards': [],
         'Tokens/cards': [],
+        'Cable locks, Screen Filters': [],
+        'Cameras, Motion detection': [],
+        'Logs, Infrared detection': [],
+        'Key management': [],
         'Environmental controls': [
           'HVAC',
           'Hot & cold aisles',
           'Fire suppression'
         ],
-        'Cable locks, Screen Filters': [],
-        'Cameras, Motion detection': [],
-        'Logs, Infrared detection': [],
-        'Key management': []
       }]
     }
   ]
@@ -788,6 +788,9 @@ const sectionFour = {
       links: [],
       bullets: [{
         'Identification, authentication, authorization and accounting (AAA)': [],
+        'Federation': [],
+        'Single sign-on': [],
+        'Transitive trust': [],
         'Multifactor authentication': [
           'Something you are',
           'Something you have',
@@ -795,9 +798,6 @@ const sectionFour = {
           'Somewhere you are',
           'Something you do'
         ],
-        'Federation': [],
-        'Single sign-on': [],
-        'Transitive trust': []
       }]
     },
     {
@@ -864,13 +864,6 @@ const sectionFour = {
       subTitle: 'Given a scenario, differentiate common account management practices.',
       links: [],
       bullets: [{
-        'Account Types': [
-          'User account',
-          'Shared & generic',
-          'Guest accounts',
-          'Service accounts',
-          'Privileged accounts'
-        ],
         'General Concepts': [
           'Least privilege',
           'Onboarding/offboarding',
@@ -894,7 +887,14 @@ const sectionFour = {
           'Password history',
           'Password reuse',
           'Password length'
-        ]
+        ],
+        'Account Types': [
+          'User account',
+          'Shared & generic',
+          'Guest accounts',
+          'Service accounts',
+          'Privileged accounts'
+        ],
       }]
     }
   ]
@@ -911,7 +911,6 @@ const sectionFive = {
       subTitle: 'Explain the importance of policies, plans & procedures related to organizational security',
       links: [],
       bullets: [{
-        'Standard operating procedure': [],
         'Agreement types': [
           'BPA',
           'SLA',
@@ -930,7 +929,8 @@ const sectionFive = {
         'General security policies': [
           'Social media networks/applications',
           'Personal email'
-        ]
+        ],
+        'Standard operating procedure': [],
       }]
     },
     {
@@ -944,13 +944,13 @@ const sectionFive = {
         'Mission-essential functions': [],
         'Identification of critical systems': [],
         'Single point of failure': [],
+        'Privacy impact assessment': [],
+        'Privacy threshold assessment': [],
         'Impact': [
           'Life, Property',
           'Safety, Finance',
           'Reputation'
-        ],
-        'Privacy impact assessment': [],
-        'Privacy threshold assessment': []
+        ]
       }]
     },
     {
@@ -1014,6 +1014,8 @@ const sectionFive = {
       bullets: [{
         'Order of volatility': [],
         'Chain of custody': [],
+        'Preservation': [],
+        'Recovery': [],
         'Data acquisition': [
           'Capture system image',
           'Network traffic and logs',
@@ -1023,8 +1025,6 @@ const sectionFive = {
           'Screenshots',
           'Witness interviews'
         ],
-        'Preservation': [],
-        'Recovery': [],
         'Strategic intelligence/counterintelligence gathering': [
           'Active logging'
         ],
@@ -1111,7 +1111,7 @@ const sectionSix = {
   num: 6,
   title: '6.0 Cryptography and PKI',
   color: '#f5a81c',
-  icon: 'fa-file-o',
+  icon: 'fa-user-secret',
   subsections: [
     {
       subNum: 6.1,
@@ -1142,12 +1142,12 @@ const sectionSix = {
         'Data-in-use': [],
         'Random/pseudo-random number generation': [],
         'Key stretching': [],
+        'Perfect forward secrecy': [],
+        'Security through obscurity': [],
         'Implementation vs. algorithm selection': [
           'Crypto service provider',
           'Crypto modules'
         ],
-        'Perfect forward secrecy': [],
-        'Security through obscurity': [],
         'Common use cases': [
           'Low power devices',
           'Low latency',

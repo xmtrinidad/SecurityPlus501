@@ -1,0 +1,20 @@
+<nav>
+  <!-- Nav Menu Button -->
+    <div>
+      <button (click)='navService.menuClicked()' class="nav__menu-btn" mat-icon-button>
+        <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+      </button>
+    </div>
+    <!-- Nav Menu Button -->
+
+    <!-- Nav Logo -->
+    <div (click)="toTop()" class="logo">
+      <img src="assets/logoSecurityPlus.svg" alt="Secuity Plus Logo">
+    </div>
+    <div>
+      <span class="nav__exam-number">SYO-501</span>
+    </div>
+    <!-- /Nav Logo -->
+    
+    <app-side-nav></app-side-nav>
+  </nav>

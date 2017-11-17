@@ -1,7 +1,7 @@
 <div class="desktop-nav">
   <ul class="sections">
     <li class="section" *ngFor="let section of sections">
-      <a [style.background-color]="section.color" [ngClass]="{'active': navService.currentSection === section}" (click)="selected(section)" href="#">
+      <a [style.backgroundColor]="section.color" [ngClass]="{'active': navService.currentSection === section}" (click)="selected(section)">
         <i class="fa {{section.icon}} fa-3x" aria-hidden="true"></i>
       </a>
     </li>

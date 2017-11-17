@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 export class NavService {
   menuState = 'hide';
   sectionChange: EventEmitter<Section> = new EventEmitter();
-  currentSection: Section;
+  currentSection: Section = SECTIONS[0];
 
   constructor() { }
 

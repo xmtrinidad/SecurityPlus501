@@ -9,11 +9,11 @@ import { NavService } from '../nav.service';
 })
 export class SectionComponent implements OnInit {
   section: Section;
-  panelOpenState = false;
 
   constructor(private navService: NavService) { }
 
   ngOnInit() {
+    this.section = this.navService.currentSection;
     this.navService.sectionChange.subscribe(s => this.section = s);
   }
 

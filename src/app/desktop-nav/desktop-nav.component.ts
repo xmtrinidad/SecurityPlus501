@@ -18,7 +18,6 @@ export class DesktopNavComponent implements OnInit {
   }
 
   selected(section: Section) {
-    console.log(section);
     this.navService.getSection(section);
   }
 

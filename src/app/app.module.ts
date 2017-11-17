@@ -12,6 +12,8 @@ import { KeysPipe } from './keys.pipe';
 import { SectionMobileDropdownComponent } from './section/section-mobile-dropdown/section-mobile-dropdown.component';
 import { SectionTitleComponent } from './section/section-title/section-title.component';
 import { SectionListComponent } from './section/section-list/section-list.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SectionListComponent } from './section/section-list/section-list.compon
     KeysPipe,
     SectionMobileDropdownComponent,
     SectionTitleComponent,
-    SectionListComponent
+    SectionListComponent,
+    FooterComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
