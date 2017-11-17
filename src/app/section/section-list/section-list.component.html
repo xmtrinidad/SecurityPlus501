@@ -9,7 +9,7 @@
       </ul>
     </li>
   </ul>
-  <div class="link-btn">
+  <div *ngIf="sectionLinks.length" class="link-btn">
     <button mat-raised-button color="accent" [matMenuTriggerFor]="menu">Professor Messer Links</button>
   </div>
   <mat-menu #menu="matMenu">
