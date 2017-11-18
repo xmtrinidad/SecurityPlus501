@@ -24,6 +24,18 @@ h3 {
 
 .side-nav__title {
   padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  .side-nav__logo {
+    flex: 1;
+    img {
+      margin-left: 47px;
+    }
+  }
+  .side-nav__close {
+    margin-right: 10px;
+    font-size: 2.3rem;
+  }
 }
 
 .section a {
@@ -45,6 +57,15 @@ h3 {
   }
 }
 
+.sections {
+  max-height: 320px;
+  overflow: auto;
+}
+
 @media (orientation: landscape) {
-  
+  .side-nav__title {
+  }
+  .sections {
+    max-height: 180px;
+  }
 }
