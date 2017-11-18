@@ -1,13 +1,13 @@
 
 
 footer {
-  margin-top: 15px;
   font-size: .92rem;
   .container {
     display: grid;
     padding: 8px;
   }
   .footer__about-project {
+    margin-top: 15px;
     a {
       display: inline;
       text-decoration: underline;
@@ -25,7 +25,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     max-width: 360px;
-    margin: auto;
+    margin: 5px auto 10px auto;
     width: 100%;
     .social__icon {
       display: block;

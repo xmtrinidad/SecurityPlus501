@@ -1,4 +1,4 @@
-nav {
+.my-nav {
     position: fixed;
     z-index: 5;
     top: 0;
@@ -13,6 +13,9 @@ nav {
   .logo {
     display: none;
     cursor: pointer;
+  }
+  .my-nav__menu-btn {
+    flex: 1;
   }
   
   .nav__exam-number {

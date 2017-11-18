@@ -36,6 +36,7 @@ export class SideNavComponent implements OnInit {
   sectionClicked(s) {
     this.navService.menuState = 'hide';
     this.navService.getSection(s);
+    window.scrollTo(0, 0);
   }
 
   closeMenu() {
