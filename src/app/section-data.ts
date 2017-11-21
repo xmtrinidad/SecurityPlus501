@@ -245,6 +245,11 @@ const sectionTwo = {
        {title: 'Load Balancers', link: 'https://www.youtube.com/watch?v=NHhuVpD6LyU'},
        {title: 'Access Points', link: 'https://www.youtube.com/watch?v=-I3KAqMQljo'},
        {title: 'SIEM', link: 'https://www.youtube.com/watch?v=3JTjVa0IM7o'},
+       {title: 'Proxies', link: 'https://www.youtube.com/watch?v=I7yyVNQzRuo'},
+       {title: 'Network Access Control', link: 'https://www.youtube.com/watch?v=gtZUHYvRFUY'},
+       {title: 'Mail Gateways', link: 'https://www.youtube.com/watch?v=N3S5vbfk70k'},
+       {title: 'Date Loss Prevention', link: 'https://www.youtube.com/watch?v=jf-GSmiQZgw'},
+       {title: 'Other Security Devices', link: 'https://www.youtube.com/watch?v=vGI_TylnBuc'}
     ],
     bullets: [{
       'Firewall': [

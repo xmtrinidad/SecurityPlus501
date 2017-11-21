@@ -12,7 +12,9 @@
   /** Hide logo on mobile **/
   .logo {
     display: none;
-    cursor: pointer;
+    img {
+      cursor: pointer;
+    }
   }
   .my-nav__menu-btn {
     flex: 1;
