@@ -339,7 +339,10 @@ const sectionTwo = {
   {
     subNum: 2.2,
     subTitle: 'Given a scenario, use appropriate software tools to assess the security posture of an organization.',
-    links: [],
+    links: [
+      {title: 'Software Security Tools', link: 'https://www.youtube.com/watch?v=OXpO5bAL6Ew'},
+      {title: 'Command Line Security Tools', link: 'https://www.youtube.com/watch?v=octwJaf6vAM'}
+    ],
     bullets: [{
       ' Protocol analyzer': [],
       'Network scanners': [
@@ -372,7 +375,10 @@ const sectionTwo = {
   {
     subNum: 2.3,
     subTitle: 'Given a scenario, troubleshoot common security issues.',
-    links: [],
+    links: [
+      {title: 'Common Security Issues', link: 'https://www.youtube.com/watch?v=JQYC5UMfYJw'},
+      {title: 'Common Security Issues', link: 'https://www.youtube.com/watch?v=JQYC5UMfYJw'}
+    ],
     bullets: [{
       'Unencrypted credentials/clear text': [],
       'Logs and events anomalies': [],
@@ -403,7 +409,9 @@ const sectionTwo = {
   {
     subNum: 2.4,
     subTitle: 'Given a scenario, analyze & interpret output from security technologies.',
-    links: [],
+    links: [
+      {title: 'Analyzing Security Output', link: 'https://www.youtube.com/watch?v=pDPZpsc0iLs'},
+    ],
     bullets: [{
       'HIDS/HIPS': [],
       'Antivirus': [],
@@ -422,7 +430,12 @@ const sectionTwo = {
   {
     subNum: 2.5,
     subTitle: 'Given a scenario, deploy mobile devices securely. ',
-    links: [],
+    links: [
+      {title: 'Mobile Device Connection Methods', link: 'https://www.youtube.com/watch?v=vXuHlaOWL6A'},
+      {title: 'Mobile Device Management', link: 'https://www.youtube.com/watch?v=92ElSmHXECU'},
+      {title: 'Mobile Device Enforcement', link: 'https://www.youtube.com/watch?v=CKgXPNEg8Jg'},
+      {title: 'Mobile Device Deployment Models', link: 'https://www.youtube.com/watch?v=IuA-Go5q9QQ'},
+    ],
     bullets: [{
       'Connection methods': [
         'Cellular',
@@ -478,7 +491,9 @@ const sectionTwo = {
   {
     subNum: 2.6,
     subTitle: 'Given a scenario, implement secure protocols.',
-    links: [],
+    links: [
+      {title: 'Secure Protocols', link: 'https://www.youtube.com/watch?v=okz3LMTw0YY'}
+    ],
     bullets: [{
       'Protocols': [
         'DNSSEC',
@@ -518,7 +533,11 @@ const sectionThree = {
     {
       subNum: 3.1,
       subTitle: 'Explain use cases & purpose for frameworks, best practices & secure configuration guides.',
-      links: [],
+      links: [
+        {title: 'Compliance and Frameworks', link: 'https://www.youtube.com/watch?v=JndVtgKf9IE'},
+        {title: 'Secure Configuration Guides', link: 'https://www.youtube.com/watch?v=NViJR3ozfiQ'},
+        {title: 'Defense-in-Depth', link: 'https://www.youtube.com/watch?v=HLQ4wX8NxQY'}
+      ],
       bullets: [{
         'Industry-standard frameworks and reference architectures': [
           'Regulatory',
@@ -546,7 +565,13 @@ const sectionThree = {
     {
       subNum: 3.2,
       subTitle: 'Given a scenario, implement secure network architecture concepts.',
-      links: [],
+      links: [
+        {title: 'Secure Network Topologies', link: 'https://www.youtube.com/watch?v=ZluKkoJPIE0'},
+        {title: 'Network Segmentation', link: 'https://www.youtube.com/watch?v=0i1CN8b1ZKQ'},
+        {title: 'VPN Technologies', link: 'https://www.youtube.com/watch?v=tuVwJsFJtr8'},
+        {title: 'Security Technology Placement', link: 'https://www.youtube.com/watch?v=5yDrpQWBz6M'},
+        {title: 'Securing SDN', link: 'https://www.youtube.com/watch?v=Ysxl3qzaSZ0'}
+      ],
       bullets: [{
         'Zones/topologies': [
           'DMZ',
@@ -588,7 +613,11 @@ const sectionThree = {
     {
       subNum: 3.3,
       subTitle: 'Given a scenario, implement secure systems design.',
-      links: [],
+      links: [
+        {title: 'Hardware Security', link: 'https://www.youtube.com/watch?v=MdLKu4t_RwU'},
+        {title: 'Operating System Security', link: 'https://www.youtube.com/watch?v=fAhvVqw_dus'},
+        {title: 'Peripheral Security', link: 'https://www.youtube.com/watch?v=SYU9rWCIHr4'}
+      ],
       bullets: [{
         'Hardware/firmware security': [
           'FDE/SED',
@@ -630,7 +659,9 @@ const sectionThree = {
     {
       subNum: 3.4,
       subTitle: 'Explain the importance of secure staging deployment concepts.',
-      links: [],
+      links: [
+        {title: 'Secure Deployments', link: 'https://www.youtube.com/watch?v=Vm3ABHDUG9w'}
+      ],
       bullets: [{
         'Sandboxing': [],
         'Environment': [
@@ -646,7 +677,9 @@ const sectionThree = {
     {
       subNum: 3.5,
       subTitle: 'Explain the security implications of embedded systems.',
-      links: [],
+      links: [
+        {title: 'Embedded Systems', link: 'https://www.youtube.com/watch?v=U7pTByoPJF8'}
+      ],
       bullets: [{
         'SCADA/ICS': [],
         'Camera systems': [],
@@ -668,7 +701,14 @@ const sectionThree = {
     {
       subNum: 3.6,
       subTitle: 'Summarize secure application development & deployment concepts.',
-      links: [],
+      links: [
+        {title: 'Development Life Cycle Models', link: 'https://www.youtube.com/watch?v=iecyJnQovHw'},
+        {title: 'Secure DevOps', link: 'https://www.youtube.com/watch?v=-b8X6Uh0LQQ'},
+        {title: 'Version Control and Change Management', link: 'https://www.youtube.com/watch?v=iTYTgEBnfUM'},
+        {title: 'Provisioning and Deprovisioning', link: 'https://www.youtube.com/watch?v=lqk6hcAIjVw'},
+        {title: 'Secure Coding Techniques', link: 'https://www.youtube.com/watch?v=RTifWn01l2g'},
+        {title: 'Code Quality and Testing', link: 'https://www.youtube.com/watch?v=pQdhsEVoHDA'}
+      ],
       bullets: [{
         'Development life-cycle models': [
           'Waterfall vs. Agile'
