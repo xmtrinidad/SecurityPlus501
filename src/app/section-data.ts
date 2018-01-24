@@ -749,7 +749,12 @@ const sectionThree = {
     {
       subNum: 3.7,
       subTitle: 'Summarize cloud and virtualization concepts.',
-      links: [],
+      links: [
+        {title: 'Virtualization Overview', link: 'https://www.youtube.com/watch?v=j52b46gHQ5I'},
+        {title: 'Virtualization Security', link: 'https://www.youtube.com/watch?v=dmEd9QDmLzQ'},
+        {title: 'Cloud Deployment Models', link: 'https://www.youtube.com/watch?v=BsFYCHBTdbM'},
+        {title: 'Security in the Cloud', link: 'https://www.youtube.com/watch?v=w3XE-3Pp_9I'}
+      ],
       bullets: [{
         'Hypervisor': [
           'Type I',
@@ -776,7 +781,10 @@ const sectionThree = {
     {
       subNum: 3.8,
       subTitle: 'Explain how resiliency and automation strategies reduce risk.',
-      links: [],
+      links: [
+        {title: 'Resiliency and Automation', link: 'https://www.youtube.com/watch?v=vegJh2dOJS4'},
+        {title: 'Redundancy, Fault Tolerance, and High Availability', link: 'https://www.youtube.com/watch?v=UFLj-Fi-hMY'},
+      ],
       bullets: [{
         'Automation/scripting': [
           'Automated courses of action',
@@ -803,7 +811,9 @@ const sectionThree = {
     {
       subNum: 3.9,
       subTitle: 'Explain the importance of physical security controls.',
-      links: [],
+      links: [
+        {title: 'Physical Security Controls', link: 'https://www.youtube.com/watch?v=gKo7aRU59HU'}
+      ],
       bullets: [{
         'Lighting, Signs': [],
         'Fencing/gate/cage': [],
@@ -839,7 +849,9 @@ const sectionFour = {
     {
       subNum: 4.1,
       subTitle: 'Compare and contrast identity & access management concepts',
-      links: [],
+      links: [
+        {title: 'AAA and Authentication', link: 'https://www.youtube.com/watch?v=xNQXoxeQYiU'}
+      ],
       bullets: [{
         'Identification, authentication, authorization and accounting (AAA)': [],
         'Federation': [],
@@ -857,7 +869,11 @@ const sectionFour = {
     {
       subNum: 4.2,
       subTitle: 'Given a scenario, install/configure identity and access services.',
-      links: [],
+      links: [
+        {title: 'Identity and Access Services', link: 'https://www.youtube.com/watch?v=c7go75lBi0w'},
+        {title: 'PAP, CHAP, and MS-CHAP', link: 'https://www.youtube.com/watch?v=20X8WVwvUh4'},
+        {title: 'Federated Identities', link: 'https://www.youtube.com/watch?v=Gs-7mAdEMek'}
+      ],
       bullets: [{
         'LDAP': [],
         'Kerberos': [],
@@ -877,7 +893,10 @@ const sectionFour = {
     {
       subNum: 4.3,
       subTitle: 'Given a scenario, implement identity & access management controls.',
-      links: [],
+      links: [
+        {title: 'Access Control Models', link: 'https://www.youtube.com/watch?v=XQ8GDSUUvPY'},
+        {title: 'Access Control Technologies', link: 'https://www.youtube.com/watch?v=hZ2voph67v8'}
+      ],
       bullets: [{
         'Access control models': [
           'MAC',
@@ -916,7 +935,11 @@ const sectionFour = {
     {
       subNum: 4.4,
       subTitle: 'Given a scenario, differentiate common account management practices.',
-      links: [],
+      links: [
+        {title: 'Account Types', link: 'https://www.youtube.com/watch?v=aP-UR4dcQTA'},
+        {title: 'Account Management', link: 'https://www.youtube.com/watch?v=Wj9Tfg9UeOY'},
+        {title: 'Account Policy Enforcement', link: 'https://www.youtube.com/watch?v=Hasbtq2LS9c'},
+      ],
       bullets: [{
         'General Concepts': [
           'Least privilege',
