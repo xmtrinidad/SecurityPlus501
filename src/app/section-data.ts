@@ -197,7 +197,7 @@ const sectionOne = {
     ],
     bullets: [{
       'Race conditions': [],
-      
+
       'Improper input handling': [],
       'Improper error handling': [],
       'Misconfiguration/weak configuration': [],
@@ -986,7 +986,24 @@ const sectionFive = {
     {
       subNum: 5.1,
       subTitle: 'Explain the importance of policies, plans & procedures related to organizational security',
-      links: [],
+      links: [
+        {
+          'title': 'Agreement Types',
+          'link': 'https://www.youtube.com/watch?v=GKoG2iGO9XI'
+        },
+        {
+          'title': 'Personnel Management',
+          'link': 'https://www.youtube.com/watch?v=NvqFFlG4KMc'
+        },
+        {
+          'title': 'Role-based Awareness Training',
+          'link': 'https://www.youtube.com/watch?v=8W7t2XKwH4M'
+        },
+        {
+          'title': 'General Security Policies',
+          'link': 'https://www.youtube.com/watch?v=bqvWRm0GYOU'
+        }
+      ],
       bullets: [{
         'Agreement types': [
           'BPA',
@@ -1013,7 +1030,7 @@ const sectionFive = {
     {
       subNum: 5.2,
       subTitle: 'Summarize business impact analysis concepts.',
-      links: [],
+      links: [{ title: 'Business Impact Analysis', link: 'https://www.youtube.com/watch?v=Q_24Xt4U2XA' }],
       bullets: [{
         'RTO/RPO': [],
         'MTBF': [],
@@ -1033,7 +1050,7 @@ const sectionFive = {
     {
       subNum: 5.3,
       subTitle: 'Explain risk management processes and concepts.',
-      links: [],
+      links: [{ title: 'Risk Assessment', link: 'https://www.youtube.com/watch?v=WanKqjP0pfA' }],
       bullets: [{
         'Three assessment': [
           'Environmental',
@@ -1065,7 +1082,16 @@ const sectionFive = {
     {
       subNum: 5.4,
       subTitle: 'Given a scenario, follow incident response procedures.',
-      links: [],
+      links: [
+        {
+          'title': 'Incident Response Planning',
+          'link': 'https://www.youtube.com/watch?v=ihtYbfGE6wY'
+        },
+        {
+          'title': 'Incident Response Process',
+          'link': 'https://www.youtube.com/watch?v=qGktAVJpTGE'
+        }
+      ],
       bullets: [{
         'Incident response plan': [
           'Documented incident types/category definitions',
@@ -1087,7 +1113,16 @@ const sectionFive = {
     {
       subNum: 5.5,
       subTitle: 'Summarize basic concepts of forensics.',
-      links: [],
+      links: [
+        {
+          'title': 'Gathering Forensics Data',
+          'link': 'https://www.youtube.com/watch?v=C3mjAsGKoco'
+        },
+        {
+          'title': 'Using Forensics Data',
+          'link': 'https://www.youtube.com/watch?v=FMtLCHNdEGs'
+        }
+      ],
       bullets: [{
         'Order of volatility': [],
         'Chain of custody': [],
@@ -1111,7 +1146,24 @@ const sectionFive = {
     {
       subNum: 5.6,
       subTitle: 'Explain disaster recovery & continuity of operation concepts.',
-      links: [],
+      links: [
+        {
+          'title': 'Disaster Recovery Sites',
+          'link': 'https://www.youtube.com/watch?v=cirj3jvDvXc'
+        },
+        {
+          'title': 'Application Recovery',
+          'link': 'https://www.youtube.com/watch?v=7s6DNSpyn_Y'
+        },
+        {
+          'title': 'Geographic Considerations',
+          'link': 'https://www.youtube.com/watch?v=H_h4zbMGeZk'
+        },
+        {
+          'title': 'Continuity of Operations',
+          'link': 'https://www.youtube.com/watch?v=uxTO8mITMko'
+        }
+      ],
       bullets: [{
         'Recovery sites': [
           'Hot site',
@@ -1143,7 +1195,7 @@ const sectionFive = {
     {
       subNum: 5.7,
       subTitle: 'Compare and contrast various types of controls.',
-      links: [],
+      links: [{ title: 'Security Controls', link: 'https://www.youtube.com/watch?v=DogZBybgd7U' }],
       bullets: [{
         'Deterrent': [],
         'Preventive': [],
@@ -1158,7 +1210,20 @@ const sectionFive = {
     {
       subNum: 5.8,
       subTitle: 'Given a scenario, carry out data security & privacy practices.',
-      links: [],
+      links: [
+        {
+          'title': 'Data Destruction',
+          'link': 'https://www.youtube.com/watch?v=ZW632ogPeRA'
+        },
+        {
+          'title': 'Handling Sensitive Data',
+          'link': 'https://www.youtube.com/watch?v=WCQnADuGPfQ'
+        },
+        {
+          'title': 'Data Roles and Retention',
+          'link': 'https://www.youtube.com/watch?v=rS4e3wQ2hNU'
+        }
+      ],
       bullets: [{
         'Data destruction and media sanitization': [
           'Burning, Shredding',
@@ -1193,7 +1258,52 @@ const sectionSix = {
     {
       subNum: 6.1,
       subTitle: 'Compare and contrast basic concepts of cryptography.',
-      links: [],
+      links: [
+        {
+          'title': 'Cryptography Concepts',
+          'link': 'https://www.youtube.com/watch?v=nb51aDeBcF0'
+        },
+        {
+          'title': 'Symmetric and Asymmetric Encryption',
+          'link': 'https://www.youtube.com/watch?v=pArLLJmgX10'
+        },
+        {
+          'title': 'Hashing and Digital Signatures',
+          'link': 'https://www.youtube.com/watch?v=OBdEhSPoDaY'
+        },
+        {
+          'title': 'Randomizing Cryptography',
+          'link': 'https://www.youtube.com/watch?v=QrpgL2D6JxU'
+        },
+        {
+          'title': 'Weak Encryption',
+          'link': 'https://www.youtube.com/watch?v=xoZ8bWG2G_s'
+        },
+        {
+          'title': 'Cryptographic Keys',
+          'link': 'https://www.youtube.com/watch?v=5c_Yed71tvU'
+        },
+        {
+          'title': 'Steganography',
+          'link': 'https://www.youtube.com/watch?v=BxH2IyEq2O8'
+        },
+        {
+          'title': 'Stream and Block Ciphers',
+          'link': 'https://www.youtube.com/watch?v=7J2XbZNNF4A'
+        },
+        {
+          'title': 'States of Data',
+          'link': 'https://www.youtube.com/watch?v=ZgfEZDYR_gc'
+        },
+        {
+          'title': 'Perfect Forward Secrecy',
+          'link': 'https://www.youtube.com/watch?v=6ZxPBen7QZw'
+        },
+        {
+          'title': 'Cryptography Use Cases',
+          'link': 'https://www.youtube.com/watch?v=7yleZJB46Dg'
+        }
+      ],
       bullets: [{
         'Symmetric algorithms': [],
         'Modes of operation': [],
@@ -1241,7 +1351,32 @@ const sectionSix = {
     {
       subNum: 6.2,
       subTitle: 'Explain cryptography algorithms & their basic characteristics.',
-      links: [],
+      links: [
+        {
+          'title': 'Symmetric Algorithms',
+          'link': 'https://www.youtube.com/watch?v=gKKcJwX0d_Y'
+        },
+        {
+          'title': 'Block Cipher Modes',
+          'link': 'https://www.youtube.com/watch?v=6rE-KlhBlq4'
+        },
+        {
+          'title': 'Asymmetric Algorithms',
+          'link': 'https://www.youtube.com/watch?v=suQuLc3iE9c'
+        },
+        {
+          'title': 'Hashing Algorithms',
+          'link': 'https://www.youtube.com/watch?v=Gw_GKnalpYY'
+        },
+        {
+          'title': 'Key Stretching Algorithms',
+          'link': 'https://www.youtube.com/watch?v=hF4xHSYGBjk'
+        },
+        {
+          'title': 'Obfuscation',
+          'link': 'https://www.youtube.com/watch?v=1l5jT_a5NKo'
+        }
+      ],
       bullets: [{
         'Symmetric algorithms': [
           'AES',
@@ -1283,7 +1418,20 @@ const sectionSix = {
     {
       subNum: 6.3,
       subTitle: 'Given a scenario, install & configure wireless security settings.',
-      links: [],
+      links: [
+        {
+          'title': 'Wireless Cryptographic Protocols',
+          'link': 'https://www.youtube.com/watch?v=_VVeZw5P35k'
+        },
+        {
+          'title': 'Wireless Authentication Protocols',
+          'link': 'https://www.youtube.com/watch?v=iyhVnOC5eHM'
+        },
+        {
+          'title': 'Wireless Security',
+          'link': 'https://www.youtube.com/watch?v=0Z9Qqe8D6lU'
+        }
+      ],
       bullets: [{
         'Cryptographic protocols': [
           'WPA',
@@ -1309,7 +1457,24 @@ const sectionSix = {
     {
       subNum: 6.4,
       subTitle: 'Given a scenario, implement public key infrastructure.',
-      links: [],
+      links: [
+        {
+          'title': 'PKI Components',
+          'link': 'https://www.youtube.com/watch?v=3yuad7_bszE'
+        },
+        {
+          'title': 'PKI Concepts',
+          'link': 'https://www.youtube.com/watch?v=u5knRY47Zqg'
+        },
+        {
+          'title': 'Types of Certificates',
+          'link': 'https://www.youtube.com/watch?v=o5gAgmRjo6A'
+        },
+        {
+          'title': 'Certificate File Formats',
+          'link': 'https://www.youtube.com/watch?v=5T6MjlFsRWI'
+        }
+      ],
       bullets: [{
         'Components': [
           'CA',
